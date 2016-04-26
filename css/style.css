@@ -33,11 +33,17 @@ nav p{
 
 .name{
 	font-family: fantasy;
+	text-transform: uppercase;
 }
 
 #logo a{
   font-family: fantasy !important;
   font-size: 30px;
+}
+
+#profile-text{
+	padding: 20px;
+	margin: 20px;
 }
 
 

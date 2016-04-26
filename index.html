@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
 </head>
 <body>
@@ -34,9 +35,9 @@
     <div class="section" id="about">
     <h1 class="title">ABOUT</h1>
     <img class=" img-responsive" src="https://dl.dropboxusercontent.com/u/60285104/Me.png" id="profile">
-     <h4 class="name"> Oumar Diarra</h4>
+     <h4 class="name"><strong> Oumar Diarra</strong></h4>
  
-    <p>I am Diarra Oumar, born and raised in Mali(West Africa).I obtained my Bachelor in computer science at SELU. I am currently a Master student at SELU (Southeastern Louisiana University) and i am also passionate of software development(mostly web applications) and Soccer. I speak Three languages (French, English and Bambara)</p>
+    <p id="profile-text">I am Diarra Oumar, born and raised in Mali(West Africa). I obtained my Bachelor in computer science at SELU. I am currently a Master student at SELU (Southeastern Louisiana University) and i am also passionate of software development(mostly web applications) and Soccer. I speak Three languages (French, English and Bambara)</p>
     </div>
    <hr>
     <div class="section" id="portfolio">
@@ -96,4 +97,24 @@
      
   </nav>
 </div>
+
+<script>
+$(document).ready(function(){
+ $(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 900);
+        return false;
+      }
+    }
+  });
+});
+})
+</script>
+
 </body>
