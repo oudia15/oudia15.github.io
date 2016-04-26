@@ -1,0 +1,78 @@
+.title{
+  color: blue !important;  
+  font-family: fantasy;
+  color: #000000 !important;
+  padding-top: 45px;
+}
+
+body{
+  background-color:#E0E6CF;
+}
+.navbar{
+  z-index: 9999;
+  border: 0;
+  font-size: 15px !important;
+  background-color: #4DE88D !important;
+}
+
+#profile{
+  padding-top: 20px;
+  margin: 0 auto;
+  width: 200px;
+}
+
+li{
+  font-size: 15px;
+  font-family: Monospace;
+  color: white;
+}
+
+nav p{
+  margin-top: 10px;
+}
+
+#logo a{
+  font-family: fantasy !important;
+  font-size: 30px;
+}
+
+
+#main{
+  padding: 0 auto ;
+}
+
+.divider{
+  height: 100px;
+}
+
+.footer{
+  padding: 0 auto;
+  border-top-width: 0px;
+}
+
+.top-nav{
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: #4DE88D;
+}
+
+.section{
+    height: 100%;
+}
+
+.thumbnail{
+  background-color: #EEEEEE;
+  color: #000000;
+  border: 0px;
+}
+label{
+   font-size: 24px;
+}
+
+.socialM{
+  height: 200px !important;
+  width: 300px !important;
+}
+.name{
+  font-family: Monospace;
+}

@@ -1,0 +1,26 @@
+body {
+  margin: 60px;
+}
+
+#caption{
+  color: white;
+}
+figcaption{
+  margin-top: -60px;
+  color: white;
+}
+
+img{
+    width: 400px;
+  margin: 0 auto;
+}
+
+.Candal{
+  
+  font-family: Candal;
+  padding-top: -40px;
+}
+
+.jumbotron{
+  margin-top: -70px;
+}
