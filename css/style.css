@@ -88,3 +88,7 @@ label{
 .name{
   font-family: Monospace;
 }
+
+.clearOverflow{
+	clear: both;
+}
