@@ -54,7 +54,9 @@ nav p{
 }
 
 .divider{
-  height: cover;
+  height:100px !important;
+  margin: 0 auto;
+  
 }
 
 .footer{
