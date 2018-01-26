@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- Custom styles for this template -->
-    <link href="./css/cover.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/contact.css" rel="stylesheet">
   </head>
 
   <body class="text-center">
@@ -22,24 +23,42 @@
     <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
       <header class="masthead mb-auto">
           <nav class="nav nav-masthead justify-content-center site-header  py-1">
-            <a class="nav-link active" href="index.html">Home</a>
+            <a class="nav-link " href="index.html">Home</a>
             <a class="nav-link" href="resume.html">Resume</a>
-						<a class="nav-link" href="about.html">About Me</a>
+						<a class="nav-link active" href="about.html">About Me</a>
             <a class="nav-link" href="contact.html">Contact</a>
 						<a class="nav-link" href="#">Projects</a>
           </nav>
       </header>
 
-      <main role="main" class="inner cover">
-        <h1 class="cover-heading">Software Developer</h1>
-				<img src="./images/me_linkedin.jpg" alt="..." class="img-circle" height="200" width="200">
-        <p class="lead">Welcome to my site. I am Oumar Diarra, a recent Southeastern Louisiana University
-					graduate with a master’s in Integrated Science and Technology with concentration in
-					Computer Science</p>
-        <p class="lead">
-          <a href="about.html" class="btn btn-secondary">Learn more</a>
-        </p>
-      </main>
+        <h1 class="cover-heading">Contact ME </h1>
+        <form role="form" id="contact-form" class="contact-form"  >
+                    <div class="row">
+                		<div class="col-md-6">
+                  		<div class="form-group">
+                            <input type="text" class="form-control" name="Name" autocomplete="off" id="Name" placeholder="Name">
+                  		</div>
+                  	</div>
+                    	<div class="col-md-6">
+                  		<div class="form-group">
+                            <input type="email" class="form-control" name="email" autocomplete="off" id="email" placeholder="E-mail">
+                  		</div>
+                  	</div>
+                  	</div>
+                  	<div class="row">
+                  		<div class="col-md-12">
+                  		<div class="form-group">
+                            <textarea class="form-control textarea" rows="3" name="Message" id="Message" placeholder="Message"></textarea>
+                  		</div>
+                  	</div>
+                    </div>
+                    <div class="row">
+                    <div class="col-md-12">
+                  <input type="submit" class="btn main-btn pull-right" id='submit' value='Send a message'>
+                  </div>
+                  </div>
+                </form>
+
 
       <footer class="mastfoot mt-auto">
         <div class="inner">
@@ -55,5 +74,16 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-		  </body>
+        <script type="text/javascript">
+        $(document).ready(function() {
+          $('#submit').click(function() {
+              $('#contact-form').attr('action',
+                             'mailto:oumar.diarra@selu.edu?subject=' +
+                             $('#Name').val() + '&body=' + $('#email').val() + '<br>' +  $('#Message').val());
+              $('#contact-form').submit();
+              window.location.href = 'index.html';
+          });
+        });
+        </script>
+   </body>
 </html>
