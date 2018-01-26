@@ -31,9 +31,9 @@
       </header>
 
         <h1 class="cover-heading">Contact ME </h1>
-        <form role="form" id="contact-form" class="contact-form"  >
+        <form role="form" id="contact-form" class="contact-form" action="mailto:oumar.diarra@selu.edu" method="post" enctype="text/plain" >
                     <div class="row">
-                		<div class="col-md-6">
+                		<div class="col-md-12">
                   		<div class="form-group">
                             <input type="text" class="form-control" name="Name" autocomplete="off" id="Name" placeholder="Name">
                   		</div>
@@ -53,7 +53,7 @@
                     </div>
                     <div class="row">
                     <div class="col-md-12">
-                  <input type="submit" class="btn main-btn pull-right" id='submit' value='Send a message'>
+                      <input type="submit" class="btn main-btn pull-right" id='submit' value='Send a message'>
                   </div>
                   </div>
                 </form>
@@ -73,16 +73,5 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <script type="text/javascript">
-        $(document).ready(function() {
-          $('#submit').click(function() {
-              $('#contact-form').attr('action',
-                             'mailto:oumar.diarra@selu.edu?subject=' +
-                             $('#Name').val() + '&body=' + $('#email').val() + '<br>' +  $('#Message').val());
-              $('#contact-form').submit();
-              window.location.href = 'index.html';
-          });
-        });
-        </script>
    </body>
 </html>
