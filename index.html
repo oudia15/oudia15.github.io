@@ -17,42 +17,122 @@
     <link href="./css/cover.css" rel="stylesheet">
   </head>
 
-  <body class="text-center">
+  <body class="text-center " data-spy="scroll" data-target=".navbar">
 
-    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
-      <header class="masthead mb-auto">
-          <nav class="nav nav-masthead justify-content-center site-header  py-1">
-            <a class="nav-link active" href="index.html">Home</a>
-            <a class="nav-link" href="resume.html">Resume</a>
-						<a class="nav-link" href="about.html">About Me</a>
-            <a class="nav-link" href="contact.html">Contact</a>
+          <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark centered">
+            <ul class ="navbar-nav mr-auto nav-masthead">
+              <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+              <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
           </nav>
-      </header>
 
-      <main role="main" class="inner cover">
-        <h1 class="cover-heading">Software Developer</h1>
-				<img src="Images/me_linkedin.jpg" alt="..." class="img-circle" height="200" width="200">
-        <p class="lead">Welcome to my site. I am Oumar Diarra, a recent Southeastern Louisiana University
-					graduate with a master’s in Integrated Science and Technology with concentration in
-					Computer Science</p>
-        <p class="lead">
-          <a href="about.html" class="btn btn-secondary">Learn more</a>
-        </p>
-      </main>
-
-      <footer class="mastfoot mt-auto">
-        <div class="inner">
-          <p>&copy; 2018 Oumar Diarra<p>
+      <section id="home" role="main" class="inner cover">
+        <div class="container-fluid content centered">
+            <h1 class="cover-heading">Software Developer</h1>
+    				<img src="Images/me_linkedin.jpg" alt="..." class="img-circle" height="220" width="200">
+            <p class="lead">Welcome to my site. I am Oumar Diarra, a recent Southeastern Louisiana University
+    					graduate with a master’s in Integrated Science and Technology with concentration in
+    					Computer Science</p>
+            <p class="lead">
+              <a href="about.html" class="btn btn-secondary">Learn more</a>
+            </p>
         </div>
-      </footer>
-    </div>
+      </section>
+
+      <section id="resume" class="container-fluid">
+        <div class=" container-fluid content centered blue-bg">
+          <div class="page-header">
+                <h1 >RESUME </h1>
+          </div>
+            <div class="mx-auto p-2 h-100">
+              <object data="pdfs/resume.pdf" type="application/pdf" width="80%" height="90%" class="centered embed-responsive-item">
+                <p><b>Example fallback content</b>: This browser does not support PDFs. Please download the PDF to view it: <a href="/pdf/sample-3pp.pdf">Download PDF</a>.</p>
+              </object>
+            </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="container-fluid content centered blue-bg">
+          <div class="page-header">
+                <h1 >ABOUT ME </h1>
+          </div>
+          <hr width=40% align="center">
+          <div class="">
+            <p>Hello, my name is Oumar Diarra, a recent Southeastern Louisiana University
+                graduate with a master’s in Integrated Science and Technology with concentration in
+                Computer Science. In love with the process of developing software, my most valuable asset
+                is my constant eagerness to learn and grow my skill set. My academic training coupled with
+                the experiences I have acquired from the various projects I’ve worked on, allowed me to
+                obtain certain skills that I believe will serve me in any software development position. During my studies in the
+                ISAT program, I also developed a deep appreciation for research. I am a strong believer of
+                hard work and constant learning, and I believe these character qualities are
+                valuable assets .</p>
+
+                <p>Throughout the matriculation of my curriculum, I worked on multiple software
+                  development projects. Some of those projects include: Windows-based automation
+                  applications, web applications using the “.NET” framework, and software used to aid in the
+                  management of vehicle maintenance. I also gained experience performing tasks such as:
+                  Frontend development with Emberjs, backend development with java 8, unit testing,
+                  automated browser testing.</p>
+
+                  <p>I believe the world of software development requires you to balance the standard of
+                      knowledge gathered from academic training along with an individual’s unique skill set
+                      derived from specific experiences in order to pursue and briefly capture the ever fleeting
+                      innovation. </p>
+
+                      <p>Thank you for your time and attention. I hope you learned a little bit about me. </p>
+                        <p>
+                          Sincerely, <br>
+                          Oumar Diarra
+                        </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container-fluid content centered blue-bg">
+          <div class="page-header">
+                <h1 >CONTACT ME </h1>
+          </div>
+          <hr width=40% align="center">
+          <form role="form" id="contact-form" class="contact-form" action="mailto:oumar.diarra@selu.edu" method="post" enctype="text/plain"  >
+                      <div class="row">
+                      <div class="col-md-8 offset-md-2">
+                        <div class="form-group">
+                              <input type="text" class="form-control" name="Name" autocomplete="off" id="Name" placeholder="Name">
+                        </div>
+                      </div>
+                        <div class="col-md-6 offset-md-2">
+                        <div class="form-group">
+                              <input type="email" class="form-control" name="email" autocomplete="off" id="email" placeholder="E-mail">
+                        </div>
+                      </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-8 offset-md-2">
+                        <div class="form-group">
+                              <textarea class="form-control textarea" rows="3" name="Message" id="Message" placeholder="Message"></textarea>
+                        </div>
+                      </div>
+                      </div>
+                      <div class="row">
+                      <div class="col-md-12">
+                        <input type="submit" class="btn main-btn pull-right" id='submit' value='Send a message'>
+                    </div>
+                    </div>
+                  </form>
+        </div>
+      </section>
 
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 		  </body>
 </html>

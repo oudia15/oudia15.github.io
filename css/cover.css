@@ -6,23 +6,10 @@
 a,
 a:focus,
 a:hover {
-  color: #fff;
+  color: black;
 }
 
-/* Site Header Class */
-.site-header {
-  background-color: rgba(0, 0, 0, .85);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-  backdrop-filter: saturate(180%) blur(20px);
-}
-.site-header a {
-  color: #999;
-  transition: ease-in-out color .15s;
-}
-.site-header a:hover {
-  color: #fff;
-  text-decoration: none;
-}
+
 
 /* Custom default button */
 .btn-secondary,
@@ -35,45 +22,38 @@ a:hover {
 }
 
 
-/*
- * Base structure
- */
-
-html,
-body {
-  height: 100%;
-  background-color: #6AA3BC;
-
+#home {
+  background-image: url("../images/workstation.jpeg");
+  background-size: 100% 95%;
+  color: white;
 }
 
-body {
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: flex;
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
-  justify-content: center;
-  color: #292A2B;
-  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+section {
+  /* height: 100vh; */
+  padding-top: 1px;
+  color: #0A2B6E;
 }
 
-.cover-container {
-  max-width: 42em;
+.content {
+  height: 100vh;
+  width: 90vw;
+  padding-top: 30px;
+}
+
+/* .blue-bg {
+  background-color: #54B8D3; */
+}
+
+.centered {
+  margin: 0 auto;
 }
 
 .img-circle {
     border-radius: 50%;
 }
 
-/*
- * Header
- */
-.masthead {
-  margin-bottom: 2rem;
-}
-
-.masthead-brand {
-  margin-bottom: 0;
+.page-header {
+    padding-bottom: 10px;
 }
 
 .nav-masthead .nav-link {
@@ -89,40 +69,19 @@ body {
   border-bottom-color: rgba(255, 255, 255, .25);
 }
 
-.nav-masthead .nav-link + .nav-link {
-  margin-left: 1rem;
-}
-
 .nav-masthead .active {
   color: #fff;
   border-bottom-color: #fff;
 }
-
-/* @media (min-width: 48em) {
-  .masthead-brand {
-    float: left;
-  }
-  .nav-masthead {
-    float: right;
-  }
-} */
-
 
 /*
  * Cover
  */
 .cover {
   padding: 0 1.5rem;
+  background-size: 100% 100%;
 }
 .cover .btn-lg {
   padding: .75rem 1.25rem;
   font-weight: 700;
-}
-
-
-/*
- * Footer
- */
-.mastfoot {
-  color: rgba(255, 255, 255, .5);
 }
