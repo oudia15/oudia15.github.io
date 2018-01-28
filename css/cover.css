@@ -35,11 +35,16 @@ section {
 }
 
 .content {
-  height: 100vh;
-  width: 90vw;
   padding-top: 30px;
 }
 
+@media screen and (min-width: 700px) {
+  .content {
+    height: 100vh;
+    width: 90vw;
+    padding-top: 30px;
+  }
+}
 
 .centered {
   margin: 0 auto;
