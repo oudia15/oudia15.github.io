@@ -21,6 +21,13 @@ a:hover {
   border: .05rem solid #fff;
 }
 
+#home h1 {
+  font-size: 70px;
+}
+
+#home p {
+  font-size: 30px;
+}
 
 .my-cover #home {
   background-image: url("../Images/workstation1.jpeg");
