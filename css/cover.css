@@ -32,10 +32,7 @@ section {
   /* height: 100vh; */
   padding-top: 1px;
   color: #0A2B6E;
-}
-
-.content {
-  padding-top: 30px;
+    min-height: 100% !important;
 }
 
 @media screen and (min-width: 700px) {
@@ -80,6 +77,10 @@ section {
   }
   .form {
     padding-bottom: 200px;
+  }
+
+  section {
+    min-height: 100% !important;
   }
 }
 
