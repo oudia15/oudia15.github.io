@@ -133,6 +133,12 @@ section {
 .img-circle {
     border-radius: 50%;
     border: 0;
+    margin-bottom: 10px;
+    transition: all 1s ease-in-out;
+}
+
+.img-circle:hover {
+  transform: scale(2);
 }
 
 .page-header {
