@@ -43,6 +43,23 @@ section {
   min-height: 100% !important;
 }
 
+.mybtn {
+  font-size: 1em;
+  font-weight: bold;
+  padding: 10px;
+  background: white;
+  border-radius: 50px;
+  margin-top: 5%;
+  transition: all 1s ease-in-out;
+}
+
+.mybtn:hover {
+    font-size: 1.1em;
+    transform: scale(1.2);
+    background: black;
+    color: white;
+}
+
 @media screen and (min-width: 700px) {
     .content-cover {
       height: 50vw;
@@ -74,11 +91,13 @@ section {
   #home h1 {
     font-size: 70px;
     font-weight: bold;
+    margin-bottom: 20px;
   }
 
   #home p {
     font-size: 30px;
     font-weight: bold;
+    margin-bottom: 30px;
   }
 
 
